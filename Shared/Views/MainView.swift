@@ -41,6 +41,12 @@ struct MainView: View {
                     .foregroundColor(Color.gray.opacity(0.3))
                 }
 
+            TeamsView()
+                .tabItem {
+                    Image(systemName: "person.3")
+                    Text("Teams")
+                    .foregroundColor(Color.gray.opacity(0.3))
+                }
         }
         .accentColor(Color.officialColor)
         .onAppear(perform: {

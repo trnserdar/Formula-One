@@ -102,6 +102,10 @@
 		3497315524A7B14600DC328E /* DriverSeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497315324A7B14600DC328E /* DriverSeasonView.swift */; };
 		3497315824A7B96300DC328E /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497315724A7B96300DC328E /* TeamView.swift */; };
 		3497315924A7B96300DC328E /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497315724A7B96300DC328E /* TeamView.swift */; };
+		3497315B24A7EBDE00DC328E /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497315A24A7EBDE00DC328E /* TeamsView.swift */; };
+		3497315C24A7EBDE00DC328E /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497315A24A7EBDE00DC328E /* TeamsView.swift */; };
+		3497315E24A7EE9600DC328E /* TeamItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497315D24A7EE9600DC328E /* TeamItemView.swift */; };
+		3497315F24A7EE9600DC328E /* TeamItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497315D24A7EE9600DC328E /* TeamItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +209,8 @@
 		3497315024A7B06200DC328E /* DriverPersonalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverPersonalView.swift; sourceTree = "<group>"; };
 		3497315324A7B14600DC328E /* DriverSeasonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverSeasonView.swift; sourceTree = "<group>"; };
 		3497315724A7B96300DC328E /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		3497315A24A7EBDE00DC328E /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		3497315D24A7EE9600DC328E /* TeamItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -519,7 +525,9 @@
 		3497315624A7B95600DC328E /* Team */ = {
 			isa = PBXGroup;
 			children = (
+				3497315A24A7EBDE00DC328E /* TeamsView.swift */,
 				3497315724A7B96300DC328E /* TeamView.swift */,
+				3497315D24A7EE9600DC328E /* TeamItemView.swift */,
 			);
 			path = Team;
 			sourceTree = "<group>";
@@ -722,6 +730,8 @@
 				345EEE3C24A74E57001D419B /* FormulaOneRouter.swift in Sources */,
 				345EEE5324A7506D001D419B /* UIColor+Hex.swift in Sources */,
 				345EEE2D24A74BED001D419B /* TeamsResponseModel.swift in Sources */,
+				3497315B24A7EBDE00DC328E /* TeamsView.swift in Sources */,
+				3497315E24A7EE9600DC328E /* TeamItemView.swift in Sources */,
 				345EEE3F24A74E61001D419B /* FormulaOneClient.swift in Sources */,
 				3497314224A76C6A00DC328E /* RankingView.swift in Sources */,
 				3497315424A7B14600DC328E /* DriverSeasonView.swift in Sources */,
@@ -766,6 +776,8 @@
 				345EEE3D24A74E57001D419B /* FormulaOneRouter.swift in Sources */,
 				345EEE5424A7506D001D419B /* UIColor+Hex.swift in Sources */,
 				345EEE2E24A74BED001D419B /* TeamsResponseModel.swift in Sources */,
+				3497315C24A7EBDE00DC328E /* TeamsView.swift in Sources */,
+				3497315F24A7EE9600DC328E /* TeamItemView.swift in Sources */,
 				345EEE4024A74E61001D419B /* FormulaOneClient.swift in Sources */,
 				3497314324A76C6A00DC328E /* RankingView.swift in Sources */,
 				3497315524A7B14600DC328E /* DriverSeasonView.swift in Sources */,
