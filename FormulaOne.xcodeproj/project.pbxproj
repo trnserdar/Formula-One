@@ -92,6 +92,8 @@
 		3497313824A76AF800DC328E /* FormulaOneWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3497311924A76AF400DC328E /* FormulaOneWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3497314224A76C6A00DC328E /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497314124A76C6A00DC328E /* RankingView.swift */; };
 		3497314324A76C6A00DC328E /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497314124A76C6A00DC328E /* RankingView.swift */; };
+		3497314A24A77B1700DC328E /* RaceRankingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497314924A77B1700DC328E /* RaceRankingsView.swift */; };
+		3497314B24A77B1700DC328E /* RaceRankingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497314924A77B1700DC328E /* RaceRankingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,6 +192,7 @@
 		3497313424A76AF800DC328E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3497313524A76AF800DC328E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		3497314124A76C6A00DC328E /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
+		3497314924A77B1700DC328E /* RaceRankingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceRankingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -428,6 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				3497310624A7570C00DC328E /* ResultsView.swift */,
+				3497314924A77B1700DC328E /* RaceRankingsView.swift */,
 			);
 			path = Results;
 			sourceTree = "<group>";
@@ -678,6 +682,7 @@
 				345EEE1B24A74B9D001D419B /* SeasonsResponseModel.swift in Sources */,
 				345EEE2124A74BB5001D419B /* RaceModel.swift in Sources */,
 				345EEE1224A74B78001D419B /* DriverModel.swift in Sources */,
+				3497314A24A77B1700DC328E /* RaceRankingsView.swift in Sources */,
 				3497310424A7570000DC328E /* RankingsView.swift in Sources */,
 				3497310A24A7571600DC328E /* SearchView.swift in Sources */,
 				345EEE3C24A74E57001D419B /* FormulaOneRouter.swift in Sources */,
@@ -717,6 +722,7 @@
 				345EEE1C24A74B9D001D419B /* SeasonsResponseModel.swift in Sources */,
 				345EEE2224A74BB5001D419B /* RaceModel.swift in Sources */,
 				345EEE1324A74B78001D419B /* DriverModel.swift in Sources */,
+				3497314B24A77B1700DC328E /* RaceRankingsView.swift in Sources */,
 				3497310524A7570000DC328E /* RankingsView.swift in Sources */,
 				3497310B24A7571600DC328E /* SearchView.swift in Sources */,
 				345EEE3D24A74E57001D419B /* FormulaOneRouter.swift in Sources */,
