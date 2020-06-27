@@ -20,9 +20,11 @@ struct CircuitsView: View {
                             
                 List(self.circuits, id: \.id) { circuit in
                     
-                    CircuitView(circuit: circuit)
-                        .listRowInsets(EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: -10.0))
-                        .frame(minHeight: 350, maxHeight: .infinity)
+                    NavigationLink(destination: CircuitView(circuit: circuit)) {
+                        CircuitView(circuit: circuit)
+                            .listRowInsets(EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: -10.0))
+                            .frame(minHeight: 350, maxHeight: .infinity)
+                    }
                 }
                 .onAppear(perform: self.getCircuits)
                 .onAppear {
