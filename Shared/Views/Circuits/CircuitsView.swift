@@ -17,21 +17,27 @@ struct CircuitsView: View {
         GeometryReader { geo in
             
             NavigationView {
-                            
-                List(self.circuits, id: \.id) { circuit in
+                
+                ScrollView {
                     
-                    NavigationLink(destination: CircuitView(circuit: circuit)) {
-                        CircuitView(circuit: circuit)
+                    LazyVStack {
+                        
+                        ForEach((0..<self.circuits.count), id: \.self) { index in
+                        
+                            NavigationLink(destination: CircuitView(circuit: self.circuits[index])) {
+                                CircuitView(circuit: self.circuits[index])
+                            }
+                            .listRowInsets(EdgeInsets())
+                            .frame(maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
+                            .background(Color.white)
+                        }
                     }
-                    .listRowInsets(EdgeInsets())
-                    .frame(maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
-                    .background(Color.white)
                 }
+                .accentColor(.black)
                 .onAppear(perform: self.getCircuits)
                 .navigationBarTitle(Text("Circuits"), displayMode: .large)
             }
         }
-        
     }
     
     func getCircuits() {
@@ -61,10 +67,10 @@ struct CircuitsView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             CircuitsView()
-            CircuitsView()
-                .preferredColorScheme(.dark)
-            CircuitsView()
-                .previewDevice("iPad (7th generation)")
+//            CircuitsView()
+//                .preferredColorScheme(.dark)
+//            CircuitsView()
+//                .previewDevice("iPad (7th generation)")
         }
     }
 }
