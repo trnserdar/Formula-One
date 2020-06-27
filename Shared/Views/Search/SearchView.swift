@@ -76,8 +76,11 @@ struct SearchView: View {
                                     .foregroundColor(.officialColor)
                                 ) {
                                     ForEach((0..<self.teams.count), id: \.self) { index in
-                                        Text("\(self.teams[index].name)")
-                                        .font(.customSubheadline)
+                                        
+                                        NavigationLink(destination: TeamView(team: self.teams[index])) {
+                                            Text("\(self.teams[index].name)")
+                                                .font(.customSubheadline)
+                                        }
                                     }
                                 }
                             }
@@ -88,8 +91,11 @@ struct SearchView: View {
                                     .foregroundColor(.officialColor)
                                 ) {
                                     ForEach((0..<self.circuits.count), id: \.self) { index in
-                                        Text("\(self.circuits[index].name)")
-                                        .font(.customSubheadline)
+                                        
+                                        NavigationLink(destination: CircuitView(circuit: self.circuits[index])) {
+                                            Text("\(self.circuits[index].name)")
+                                                .font(.customSubheadline)
+                                        }
                                     }
                                 }
                             }

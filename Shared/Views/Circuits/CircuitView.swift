@@ -54,9 +54,8 @@ struct CircuitView: View {
                         .aspectRatio(contentMode: .fit)
                         .padding(5)
                 }
-
-                .frame(minWidth: geo.size.width - 10, maxWidth: geo.size.width, alignment: .center)
-                .padding(5.0)
+                .frame(maxWidth: 300.0, maxHeight: 300.0)
+                .padding(10.0)
                 .background(colorScheme == .dark ? Color.officialColor
                                 .opacity(0.2).cornerRadius(16.0)
                                 : Color.clear.cornerRadius(16.0))
@@ -101,7 +100,8 @@ struct CircuitView: View {
             }
             .background(Color.gray.opacity(0.1))
             .cornerRadius(16.0)
-            .frame(minWidth: geo.size.width, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+            .padding(EdgeInsets(top: 15.0, leading: 15.0, bottom: 15.0, trailing: 15.0))
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
 }

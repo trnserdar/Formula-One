@@ -22,16 +22,12 @@ struct CircuitsView: View {
                     
                     NavigationLink(destination: CircuitView(circuit: circuit)) {
                         CircuitView(circuit: circuit)
-                            .listRowInsets(EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: -10.0))
-                            .frame(minHeight: 350, maxHeight: .infinity)
                     }
+                    .listRowInsets(EdgeInsets())
+                    .frame(maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
+                    .background(Color.white)
                 }
                 .onAppear(perform: self.getCircuits)
-                .onAppear {
-                    #if !os(macOS)
-                    UITableView.appearance().separatorStyle = .none
-                    #endif
-                }
                 .navigationBarTitle(Text("Circuits"), displayMode: .large)
             }
         }
