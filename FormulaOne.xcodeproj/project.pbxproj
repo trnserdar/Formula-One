@@ -57,9 +57,11 @@
 		345EEDD424A748ED001D419B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				345EEDD524A748ED001D419B /* FormulaOneApp.swift */,
-				345EEDD624A748ED001D419B /* ContentView.swift */,
-				345EEDD724A748ED001D419B /* Assets.xcassets */,
+				345EEDF624A74A3A001D419B /* Common */,
+				345EEDF724A74A40001D419B /* Models */,
+				345EEDF824A74A46001D419B /* Networking */,
+				345EEDF924A74A4F001D419B /* SupportingFiles */,
+				345EEDFA24A74A59001D419B /* Views */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -88,6 +90,100 @@
 				345EEDE724A748EE001D419B /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		345EEDF624A74A3A001D419B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				345EEDD524A748ED001D419B /* FormulaOneApp.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		345EEDF724A74A40001D419B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				345EEE0124A74A9E001D419B /* Circuit */,
+				345EEE0024A74A97001D419B /* Competitions */,
+				345EEDFF24A74A91001D419B /* Driver */,
+				345EEDFE24A74A8C001D419B /* General */,
+				345EEDFD24A74A87001D419B /* Race */,
+				345EEDFC24A74A81001D419B /* Ranking */,
+				345EEDFB24A74A7C001D419B /* Team */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		345EEDF824A74A46001D419B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		345EEDF924A74A4F001D419B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				345EEDD724A748ED001D419B /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		345EEDFA24A74A59001D419B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				345EEDD624A748ED001D419B /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		345EEDFB24A74A7C001D419B /* Team */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		345EEDFC24A74A81001D419B /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ranking;
+			sourceTree = "<group>";
+		};
+		345EEDFD24A74A87001D419B /* Race */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Race;
+			sourceTree = "<group>";
+		};
+		345EEDFE24A74A8C001D419B /* General */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		345EEDFF24A74A91001D419B /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
+		345EEE0024A74A97001D419B /* Competitions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Competitions;
+			sourceTree = "<group>";
+		};
+		345EEE0124A74A9E001D419B /* Circuit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Circuit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
