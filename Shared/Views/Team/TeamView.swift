@@ -41,7 +41,7 @@ struct TeamView: View {
             .clipShape(Circle())
             .padding(15)
 
-            HStack(alignment: .center, spacing: 10.0) {
+            VStack(spacing: 20.0) {
                 
                 VStack(alignment: .center, spacing: 7) {
                     Text("President")
@@ -53,8 +53,6 @@ struct TeamView: View {
                 }
                 .padding(10.0)
                 
-                Spacer()
-
                 VStack(alignment: .center, spacing: 7) {
                     Text("Director")
                         .font(.customHeadline)
@@ -64,11 +62,6 @@ struct TeamView: View {
                         .multilineTextAlignment(.center)
                 }
                 .padding(10.0)
-            }
-            .padding(20.0)
-            .frame(maxWidth: .infinity)
-            
-            HStack(alignment: .center, spacing: 10.0) {
                 
                 VStack(alignment: .center, spacing: 7) {
                     Text("Technical Manager")
@@ -79,9 +72,7 @@ struct TeamView: View {
                         .multilineTextAlignment(.center)
                 }
                 .padding(10.0)
-                
-                Spacer()
-                
+                                
                 VStack(alignment: .center, spacing: 7) {
                     Text("Engine")
                         .font(.customHeadline)
