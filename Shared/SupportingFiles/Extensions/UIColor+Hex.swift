@@ -5,6 +5,7 @@
 //  Created by Serdar Turan on 27.06.2020.
 //
 
+#if !os(macOS)
 import UIKit
 
 extension UIColor {
@@ -35,3 +36,4 @@ extension UIColor {
     }
     
 }
+#endif

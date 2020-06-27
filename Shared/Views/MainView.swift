@@ -45,6 +45,7 @@ struct MainView: View {
         .accentColor(Color.officialColor)
         .onAppear(perform: {
 
+            #if !os(macOS)
             UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.officialColor, .font: UIFont(name: "Formula1-Display-Bold", size: 30)!]
             UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.officialColor, .font: UIFont(name: "Formula1-Display-Bold", size: 20)!]
 
@@ -54,6 +55,7 @@ struct MainView: View {
 
             UISegmentedControl.appearance().setTitleTextAttributes([.font: UIFont(name: "Formula1-Display-Regular", size: 13)!, .foregroundColor: UIColor.officialColor.withAlphaComponent(1.0)], for: .selected)
             UISegmentedControl.appearance().setTitleTextAttributes([.font: UIFont(name: "Formula1-Display-Regular", size: 13)!, .foregroundColor: UIColor.gray.withAlphaComponent(0.3)], for: .normal)
+            #endif
         })
     }
     
