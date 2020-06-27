@@ -61,6 +61,14 @@
 		345EEE4C24A74F26001D419B /* Formula1-Wide.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345EEE4724A74F26001D419B /* Formula1-Wide.otf */; };
 		345EEE4D24A74F26001D419B /* Formula1-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345EEE4824A74F26001D419B /* Formula1-Regular.otf */; };
 		345EEE4E24A74F26001D419B /* Formula1-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345EEE4824A74F26001D419B /* Formula1-Regular.otf */; };
+		345EEE5024A75062001D419B /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE4F24A75062001D419B /* Color+Hex.swift */; };
+		345EEE5124A75062001D419B /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE4F24A75062001D419B /* Color+Hex.swift */; };
+		345EEE5324A7506D001D419B /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE5224A7506D001D419B /* UIColor+Hex.swift */; };
+		345EEE5424A7506D001D419B /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE5224A7506D001D419B /* UIColor+Hex.swift */; };
+		345EEE5624A75079001D419B /* Font+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE5524A75079001D419B /* Font+Custom.swift */; };
+		345EEE5724A75079001D419B /* Font+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE5524A75079001D419B /* Font+Custom.swift */; };
+		345EEE5924A75092001D419B /* UIApplication+EndEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE5824A75092001D419B /* UIApplication+EndEditing.swift */; };
+		345EEE5A24A75092001D419B /* UIApplication+EndEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE5824A75092001D419B /* UIApplication+EndEditing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +103,10 @@
 		345EEE4624A74F26001D419B /* Formula1-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Bold.otf"; sourceTree = "<group>"; };
 		345EEE4724A74F26001D419B /* Formula1-Wide.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Wide.otf"; sourceTree = "<group>"; };
 		345EEE4824A74F26001D419B /* Formula1-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Regular.otf"; sourceTree = "<group>"; };
+		345EEE4F24A75062001D419B /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		345EEE5224A7506D001D419B /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		345EEE5524A75079001D419B /* Font+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Custom.swift"; sourceTree = "<group>"; };
+		345EEE5824A75092001D419B /* UIApplication+EndEditing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+EndEditing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +306,10 @@
 		345EEE4524A74F03001D419B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				345EEE4F24A75062001D419B /* Color+Hex.swift */,
+				345EEE5224A7506D001D419B /* UIColor+Hex.swift */,
+				345EEE5524A75079001D419B /* Font+Custom.swift */,
+				345EEE5824A75092001D419B /* UIApplication+EndEditing.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -409,6 +425,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345EEE5024A75062001D419B /* Color+Hex.swift in Sources */,
+				345EEE5924A75092001D419B /* UIApplication+EndEditing.swift in Sources */,
 				345EEE1524A74B84001D419B /* DriverTeamModel.swift in Sources */,
 				345EEE0F24A74B6E001D419B /* DriversResponseModel.swift in Sources */,
 				345EEE4224A74E69001D419B /* NetworkConstants.swift in Sources */,
@@ -417,6 +435,7 @@
 				345EEE2124A74BB5001D419B /* RaceModel.swift in Sources */,
 				345EEE1224A74B78001D419B /* DriverModel.swift in Sources */,
 				345EEE3C24A74E57001D419B /* FormulaOneRouter.swift in Sources */,
+				345EEE5324A7506D001D419B /* UIColor+Hex.swift in Sources */,
 				345EEE2D24A74BED001D419B /* TeamsResponseModel.swift in Sources */,
 				345EEE3F24A74E61001D419B /* FormulaOneClient.swift in Sources */,
 				345EEE0624A74B0C001D419B /* CircuitsResponseModel.swift in Sources */,
@@ -431,6 +450,7 @@
 				345EEE1824A74B90001D419B /* LocationModel.swift in Sources */,
 				345EEE3924A74E47001D419B /* ServiceClient.swift in Sources */,
 				345EEE0924A74B25001D419B /* CompetitionsResponseModel.swift in Sources */,
+				345EEE5624A75079001D419B /* Font+Custom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +458,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345EEE5124A75062001D419B /* Color+Hex.swift in Sources */,
+				345EEE5A24A75092001D419B /* UIApplication+EndEditing.swift in Sources */,
 				345EEE1624A74B84001D419B /* DriverTeamModel.swift in Sources */,
 				345EEE1024A74B6E001D419B /* DriversResponseModel.swift in Sources */,
 				345EEE4324A74E69001D419B /* NetworkConstants.swift in Sources */,
@@ -446,6 +468,7 @@
 				345EEE2224A74BB5001D419B /* RaceModel.swift in Sources */,
 				345EEE1324A74B78001D419B /* DriverModel.swift in Sources */,
 				345EEE3D24A74E57001D419B /* FormulaOneRouter.swift in Sources */,
+				345EEE5424A7506D001D419B /* UIColor+Hex.swift in Sources */,
 				345EEE2E24A74BED001D419B /* TeamsResponseModel.swift in Sources */,
 				345EEE4024A74E61001D419B /* FormulaOneClient.swift in Sources */,
 				345EEE0724A74B0C001D419B /* CircuitsResponseModel.swift in Sources */,
@@ -460,6 +483,7 @@
 				345EEE1924A74B90001D419B /* LocationModel.swift in Sources */,
 				345EEE3A24A74E47001D419B /* ServiceClient.swift in Sources */,
 				345EEE0A24A74B25001D419B /* CompetitionsResponseModel.swift in Sources */,
+				345EEE5724A75079001D419B /* Font+Custom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
