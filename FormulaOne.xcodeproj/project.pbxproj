@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		345EEDE824A748EE001D419B /* FormulaOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEDD524A748ED001D419B /* FormulaOneApp.swift */; };
 		345EEDE924A748EE001D419B /* FormulaOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEDD524A748ED001D419B /* FormulaOneApp.swift */; };
-		345EEDEA24A748EE001D419B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEDD624A748ED001D419B /* ContentView.swift */; };
-		345EEDEB24A748EE001D419B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEDD624A748ED001D419B /* ContentView.swift */; };
 		345EEDEC24A748EE001D419B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345EEDD724A748ED001D419B /* Assets.xcassets */; };
 		345EEDED24A748EE001D419B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345EEDD724A748ED001D419B /* Assets.xcassets */; };
 		345EEE0324A74AEE001D419B /* CircuitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE0224A74AEE001D419B /* CircuitModel.swift */; };
@@ -69,11 +67,20 @@
 		345EEE5724A75079001D419B /* Font+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE5524A75079001D419B /* Font+Custom.swift */; };
 		345EEE5924A75092001D419B /* UIApplication+EndEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE5824A75092001D419B /* UIApplication+EndEditing.swift */; };
 		345EEE5A24A75092001D419B /* UIApplication+EndEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE5824A75092001D419B /* UIApplication+EndEditing.swift */; };
+		3497310124A755E900DC328E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497310024A755E900DC328E /* MainView.swift */; };
+		3497310224A755E900DC328E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497310024A755E900DC328E /* MainView.swift */; };
+		3497310424A7570000DC328E /* RankingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497310324A7570000DC328E /* RankingsView.swift */; };
+		3497310524A7570000DC328E /* RankingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497310324A7570000DC328E /* RankingsView.swift */; };
+		3497310724A7570C00DC328E /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497310624A7570C00DC328E /* ResultsView.swift */; };
+		3497310824A7570C00DC328E /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497310624A7570C00DC328E /* ResultsView.swift */; };
+		3497310A24A7571600DC328E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497310924A7571600DC328E /* SearchView.swift */; };
+		3497310B24A7571600DC328E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497310924A7571600DC328E /* SearchView.swift */; };
+		3497310D24A7572000DC328E /* CircuitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497310C24A7572000DC328E /* CircuitsView.swift */; };
+		3497310E24A7572000DC328E /* CircuitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497310C24A7572000DC328E /* CircuitsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		345EEDD524A748ED001D419B /* FormulaOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneApp.swift; sourceTree = "<group>"; };
-		345EEDD624A748ED001D419B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		345EEDD724A748ED001D419B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		345EEDDC24A748EE001D419B /* FormulaOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345EEDDF24A748EE001D419B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +114,11 @@
 		345EEE5224A7506D001D419B /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		345EEE5524A75079001D419B /* Font+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Custom.swift"; sourceTree = "<group>"; };
 		345EEE5824A75092001D419B /* UIApplication+EndEditing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+EndEditing.swift"; sourceTree = "<group>"; };
+		3497310024A755E900DC328E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3497310324A7570000DC328E /* RankingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingsView.swift; sourceTree = "<group>"; };
+		3497310624A7570C00DC328E /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		3497310924A7571600DC328E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		3497310C24A7572000DC328E /* CircuitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,11 +235,11 @@
 		345EEDFA24A74A59001D419B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3497310024A755E900DC328E /* MainView.swift */,
 				345EEE5B24A7533C001D419B /* Rankings */,
 				345EEE5C24A75346001D419B /* Results */,
 				345EEE5D24A75351001D419B /* Search */,
 				345EEE5E24A7535E001D419B /* Circuits */,
-				345EEDD624A748ED001D419B /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -321,6 +333,7 @@
 		345EEE5B24A7533C001D419B /* Rankings */ = {
 			isa = PBXGroup;
 			children = (
+				3497310324A7570000DC328E /* RankingsView.swift */,
 			);
 			path = Rankings;
 			sourceTree = "<group>";
@@ -328,6 +341,7 @@
 		345EEE5C24A75346001D419B /* Results */ = {
 			isa = PBXGroup;
 			children = (
+				3497310624A7570C00DC328E /* ResultsView.swift */,
 			);
 			path = Results;
 			sourceTree = "<group>";
@@ -335,6 +349,7 @@
 		345EEE5D24A75351001D419B /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				3497310924A7571600DC328E /* SearchView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -342,6 +357,7 @@
 		345EEE5E24A7535E001D419B /* Circuits */ = {
 			isa = PBXGroup;
 			children = (
+				3497310C24A7572000DC328E /* CircuitsView.swift */,
 			);
 			path = Circuits;
 			sourceTree = "<group>";
@@ -462,23 +478,27 @@
 				345EEE1524A74B84001D419B /* DriverTeamModel.swift in Sources */,
 				345EEE0F24A74B6E001D419B /* DriversResponseModel.swift in Sources */,
 				345EEE4224A74E69001D419B /* NetworkConstants.swift in Sources */,
+				3497310D24A7572000DC328E /* CircuitsView.swift in Sources */,
 				345EEE3024A74BF5001D419B /* TeamModel.swift in Sources */,
 				345EEE1B24A74B9D001D419B /* SeasonsResponseModel.swift in Sources */,
 				345EEE2124A74BB5001D419B /* RaceModel.swift in Sources */,
 				345EEE1224A74B78001D419B /* DriverModel.swift in Sources */,
+				3497310424A7570000DC328E /* RankingsView.swift in Sources */,
+				3497310A24A7571600DC328E /* SearchView.swift in Sources */,
 				345EEE3C24A74E57001D419B /* FormulaOneRouter.swift in Sources */,
 				345EEE5324A7506D001D419B /* UIColor+Hex.swift in Sources */,
 				345EEE2D24A74BED001D419B /* TeamsResponseModel.swift in Sources */,
 				345EEE3F24A74E61001D419B /* FormulaOneClient.swift in Sources */,
 				345EEE0624A74B0C001D419B /* CircuitsResponseModel.swift in Sources */,
-				345EEDEA24A748EE001D419B /* ContentView.swift in Sources */,
 				345EEDE824A748EE001D419B /* FormulaOneApp.swift in Sources */,
 				345EEE2A24A74BD1001D419B /* RankingModel.swift in Sources */,
 				345EEE0C24A74B32001D419B /* CompetitionModel.swift in Sources */,
 				345EEE0324A74AEE001D419B /* CircuitModel.swift in Sources */,
+				3497310124A755E900DC328E /* MainView.swift in Sources */,
 				345EEE1E24A74BAE001D419B /* RacesResponseModel.swift in Sources */,
 				345EEE2724A74BCA001D419B /* RankingsResponseModel.swift in Sources */,
 				345EEE2424A74BBC001D419B /* LapModel.swift in Sources */,
+				3497310724A7570C00DC328E /* ResultsView.swift in Sources */,
 				345EEE1824A74B90001D419B /* LocationModel.swift in Sources */,
 				345EEE3924A74E47001D419B /* ServiceClient.swift in Sources */,
 				345EEE0924A74B25001D419B /* CompetitionsResponseModel.swift in Sources */,
@@ -495,23 +515,27 @@
 				345EEE1624A74B84001D419B /* DriverTeamModel.swift in Sources */,
 				345EEE1024A74B6E001D419B /* DriversResponseModel.swift in Sources */,
 				345EEE4324A74E69001D419B /* NetworkConstants.swift in Sources */,
+				3497310E24A7572000DC328E /* CircuitsView.swift in Sources */,
 				345EEE3124A74BF5001D419B /* TeamModel.swift in Sources */,
 				345EEE1C24A74B9D001D419B /* SeasonsResponseModel.swift in Sources */,
 				345EEE2224A74BB5001D419B /* RaceModel.swift in Sources */,
 				345EEE1324A74B78001D419B /* DriverModel.swift in Sources */,
+				3497310524A7570000DC328E /* RankingsView.swift in Sources */,
+				3497310B24A7571600DC328E /* SearchView.swift in Sources */,
 				345EEE3D24A74E57001D419B /* FormulaOneRouter.swift in Sources */,
 				345EEE5424A7506D001D419B /* UIColor+Hex.swift in Sources */,
 				345EEE2E24A74BED001D419B /* TeamsResponseModel.swift in Sources */,
 				345EEE4024A74E61001D419B /* FormulaOneClient.swift in Sources */,
 				345EEE0724A74B0C001D419B /* CircuitsResponseModel.swift in Sources */,
-				345EEDEB24A748EE001D419B /* ContentView.swift in Sources */,
 				345EEDE924A748EE001D419B /* FormulaOneApp.swift in Sources */,
 				345EEE2B24A74BD1001D419B /* RankingModel.swift in Sources */,
 				345EEE0D24A74B32001D419B /* CompetitionModel.swift in Sources */,
 				345EEE0424A74AEE001D419B /* CircuitModel.swift in Sources */,
+				3497310224A755E900DC328E /* MainView.swift in Sources */,
 				345EEE1F24A74BAE001D419B /* RacesResponseModel.swift in Sources */,
 				345EEE2824A74BCA001D419B /* RankingsResponseModel.swift in Sources */,
 				345EEE2524A74BBC001D419B /* LapModel.swift in Sources */,
+				3497310824A7570C00DC328E /* ResultsView.swift in Sources */,
 				345EEE1924A74B90001D419B /* LocationModel.swift in Sources */,
 				345EEE3A24A74E47001D419B /* ServiceClient.swift in Sources */,
 				345EEE0A24A74B25001D419B /* CompetitionsResponseModel.swift in Sources */,
