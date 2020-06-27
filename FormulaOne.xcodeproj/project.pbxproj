@@ -90,6 +90,8 @@
 		3497313024A76AF800DC328E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3497312F24A76AF800DC328E /* Assets.xcassets */; };
 		3497313324A76AF800DC328E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3497313224A76AF800DC328E /* Preview Assets.xcassets */; };
 		3497313824A76AF800DC328E /* FormulaOneWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3497311924A76AF400DC328E /* FormulaOneWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3497314224A76C6A00DC328E /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497314124A76C6A00DC328E /* RankingView.swift */; };
+		3497314324A76C6A00DC328E /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497314124A76C6A00DC328E /* RankingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +189,7 @@
 		3497313224A76AF800DC328E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3497313424A76AF800DC328E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3497313524A76AF800DC328E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3497314124A76C6A00DC328E /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -416,6 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				3497310324A7570000DC328E /* RankingsView.swift */,
+				3497314124A76C6A00DC328E /* RankingView.swift */,
 			);
 			path = Rankings;
 			sourceTree = "<group>";
@@ -561,6 +565,8 @@
 			dependencies = (
 			);
 			name = "FormulaOneWatch Extension";
+			packageProductDependencies = (
+			);
 			productName = "FormulaOneWatch Extension";
 			productReference = 3497312224A76AF600DC328E /* FormulaOneWatch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -582,6 +588,7 @@
 					};
 					3497311824A76AF400DC328E = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					3497312124A76AF600DC328E = {
 						CreatedOnToolsVersion = 12.0;
@@ -677,6 +684,7 @@
 				345EEE5324A7506D001D419B /* UIColor+Hex.swift in Sources */,
 				345EEE2D24A74BED001D419B /* TeamsResponseModel.swift in Sources */,
 				345EEE3F24A74E61001D419B /* FormulaOneClient.swift in Sources */,
+				3497314224A76C6A00DC328E /* RankingView.swift in Sources */,
 				345EEE0624A74B0C001D419B /* CircuitsResponseModel.swift in Sources */,
 				345EEDE824A748EE001D419B /* FormulaOneApp.swift in Sources */,
 				345EEE2A24A74BD1001D419B /* RankingModel.swift in Sources */,
@@ -715,6 +723,7 @@
 				345EEE5424A7506D001D419B /* UIColor+Hex.swift in Sources */,
 				345EEE2E24A74BED001D419B /* TeamsResponseModel.swift in Sources */,
 				345EEE4024A74E61001D419B /* FormulaOneClient.swift in Sources */,
+				3497314324A76C6A00DC328E /* RankingView.swift in Sources */,
 				345EEE0724A74B0C001D419B /* CircuitsResponseModel.swift in Sources */,
 				345EEDE924A748EE001D419B /* FormulaOneApp.swift in Sources */,
 				345EEE2B24A74BD1001D419B /* RankingModel.swift in Sources */,
@@ -1018,14 +1027,21 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75PKQ5LQ7V;
 				IBSC_MODULE = FormulaOneWatch_Extension;
 				INFOPLIST_FILE = FormulaOneWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serdarturan.FormulaOne.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
@@ -1038,10 +1054,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75PKQ5LQ7V;
 				IBSC_MODULE = FormulaOneWatch_Extension;
 				INFOPLIST_FILE = FormulaOneWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serdarturan.FormulaOne.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
