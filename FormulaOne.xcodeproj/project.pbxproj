@@ -81,7 +81,58 @@
 		3497311124A757DF00DC328E /* CircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497310F24A757DF00DC328E /* CircuitView.swift */; };
 		3497311424A766A600DC328E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3497311324A766A600DC328E /* Alamofire */; };
 		3497311624A766AB00DC328E /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3497311524A766AB00DC328E /* URLImage */; };
+		3497311C24A76AF500DC328E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3497311B24A76AF500DC328E /* Assets.xcassets */; };
+		3497312324A76AF600DC328E /* FormulaOneWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3497312224A76AF600DC328E /* FormulaOneWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3497312824A76AF600DC328E /* FormulaOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497312724A76AF600DC328E /* FormulaOneApp.swift */; };
+		3497312A24A76AF600DC328E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497312924A76AF600DC328E /* ContentView.swift */; };
+		3497312C24A76AF600DC328E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497312B24A76AF600DC328E /* NotificationController.swift */; };
+		3497312E24A76AF600DC328E /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497312D24A76AF600DC328E /* NotificationView.swift */; };
+		3497313024A76AF800DC328E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3497312F24A76AF800DC328E /* Assets.xcassets */; };
+		3497313324A76AF800DC328E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3497313224A76AF800DC328E /* Preview Assets.xcassets */; };
+		3497313824A76AF800DC328E /* FormulaOneWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3497311924A76AF400DC328E /* FormulaOneWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3497312424A76AF600DC328E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 345EEDD024A748EC001D419B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3497312124A76AF600DC328E;
+			remoteInfo = "FormulaOneWatch Extension";
+		};
+		3497313624A76AF800DC328E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 345EEDD024A748EC001D419B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3497311824A76AF400DC328E;
+			remoteInfo = FormulaOneWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3497313C24A76AF800DC328E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3497312324A76AF600DC328E /* FormulaOneWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3497314024A76AF800DC328E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3497313824A76AF800DC328E /* FormulaOneWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		345EEDD524A748ED001D419B /* FormulaOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneApp.swift; sourceTree = "<group>"; };
@@ -124,6 +175,18 @@
 		3497310924A7571600DC328E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		3497310C24A7572000DC328E /* CircuitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitsView.swift; sourceTree = "<group>"; };
 		3497310F24A757DF00DC328E /* CircuitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitView.swift; sourceTree = "<group>"; };
+		3497311924A76AF400DC328E /* FormulaOneWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaOneWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3497311B24A76AF500DC328E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3497311D24A76AF500DC328E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3497312224A76AF600DC328E /* FormulaOneWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FormulaOneWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3497312724A76AF600DC328E /* FormulaOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneApp.swift; sourceTree = "<group>"; };
+		3497312924A76AF600DC328E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3497312B24A76AF600DC328E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3497312D24A76AF600DC328E /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		3497312F24A76AF800DC328E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3497313224A76AF800DC328E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3497313424A76AF800DC328E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3497313524A76AF800DC328E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +208,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3497311F24A76AF600DC328E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -154,6 +224,8 @@
 				345EEDD424A748ED001D419B /* Shared */,
 				345EEDDE24A748EE001D419B /* iOS */,
 				345EEDE524A748EE001D419B /* macOS */,
+				3497311A24A76AF400DC328E /* FormulaOneWatch */,
+				3497312624A76AF600DC328E /* FormulaOneWatch Extension */,
 				345EEDDD24A748EE001D419B /* Products */,
 				3497311224A766A600DC328E /* Frameworks */,
 			);
@@ -176,6 +248,8 @@
 			children = (
 				345EEDDC24A748EE001D419B /* FormulaOne.app */,
 				345EEDE424A748EE001D419B /* FormulaOne.app */,
+				3497311924A76AF400DC328E /* FormulaOneWatch.app */,
+				3497312224A76AF600DC328E /* FormulaOneWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -378,6 +452,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3497311A24A76AF400DC328E /* FormulaOneWatch */ = {
+			isa = PBXGroup;
+			children = (
+				3497311B24A76AF500DC328E /* Assets.xcassets */,
+				3497311D24A76AF500DC328E /* Info.plist */,
+			);
+			path = FormulaOneWatch;
+			sourceTree = "<group>";
+		};
+		3497312624A76AF600DC328E /* FormulaOneWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3497312724A76AF600DC328E /* FormulaOneApp.swift */,
+				3497312924A76AF600DC328E /* ContentView.swift */,
+				3497312B24A76AF600DC328E /* NotificationController.swift */,
+				3497312D24A76AF600DC328E /* NotificationView.swift */,
+				3497312F24A76AF800DC328E /* Assets.xcassets */,
+				3497313424A76AF800DC328E /* Info.plist */,
+				3497313524A76AF800DC328E /* PushNotificationPayload.apns */,
+				3497313124A76AF800DC328E /* Preview Content */,
+			);
+			path = "FormulaOneWatch Extension";
+			sourceTree = "<group>";
+		};
+		3497313124A76AF800DC328E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3497313224A76AF800DC328E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -388,10 +494,12 @@
 				345EEDD824A748EE001D419B /* Sources */,
 				345EEDD924A748EE001D419B /* Frameworks */,
 				345EEDDA24A748EE001D419B /* Resources */,
+				3497314024A76AF800DC328E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3497313724A76AF800DC328E /* PBXTargetDependency */,
 			);
 			name = iOS;
 			packageProductDependencies = (
@@ -423,6 +531,40 @@
 			productReference = 345EEDE424A748EE001D419B /* FormulaOne.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3497311824A76AF400DC328E /* FormulaOneWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3497313D24A76AF800DC328E /* Build configuration list for PBXNativeTarget "FormulaOneWatch" */;
+			buildPhases = (
+				3497311724A76AF400DC328E /* Resources */,
+				3497313C24A76AF800DC328E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3497312524A76AF600DC328E /* PBXTargetDependency */,
+			);
+			name = FormulaOneWatch;
+			productName = FormulaOneWatch;
+			productReference = 3497311924A76AF400DC328E /* FormulaOneWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3497312124A76AF600DC328E /* FormulaOneWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3497313924A76AF800DC328E /* Build configuration list for PBXNativeTarget "FormulaOneWatch Extension" */;
+			buildPhases = (
+				3497311E24A76AF600DC328E /* Sources */,
+				3497311F24A76AF600DC328E /* Frameworks */,
+				3497312024A76AF600DC328E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FormulaOneWatch Extension";
+			productName = "FormulaOneWatch Extension";
+			productReference = 3497312224A76AF600DC328E /* FormulaOneWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -436,6 +578,12 @@
 						CreatedOnToolsVersion = 12.0;
 					};
 					345EEDE324A748EE001D419B = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					3497311824A76AF400DC328E = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					3497312124A76AF600DC328E = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -459,6 +607,8 @@
 			targets = (
 				345EEDDB24A748EE001D419B /* iOS */,
 				345EEDE324A748EE001D419B /* macOS */,
+				3497311824A76AF400DC328E /* FormulaOneWatch */,
+				3497312124A76AF600DC328E /* FormulaOneWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -483,6 +633,23 @@
 				345EEE4E24A74F26001D419B /* Formula1-Regular.otf in Resources */,
 				345EEE4C24A74F26001D419B /* Formula1-Wide.otf in Resources */,
 				345EEE4A24A74F26001D419B /* Formula1-Bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3497311724A76AF400DC328E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3497311C24A76AF500DC328E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3497312024A76AF600DC328E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3497313324A76AF800DC328E /* Preview Assets.xcassets in Resources */,
+				3497313024A76AF800DC328E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,7 +732,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3497311E24A76AF600DC328E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3497312C24A76AF600DC328E /* NotificationController.swift in Sources */,
+				3497312A24A76AF600DC328E /* ContentView.swift in Sources */,
+				3497312824A76AF600DC328E /* FormulaOneApp.swift in Sources */,
+				3497312E24A76AF600DC328E /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3497312524A76AF600DC328E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3497312124A76AF600DC328E /* FormulaOneWatch Extension */;
+			targetProxy = 3497312424A76AF600DC328E /* PBXContainerItemProxy */;
+		};
+		3497313724A76AF800DC328E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3497311824A76AF400DC328E /* FormulaOneWatch */;
+			targetProxy = 3497313624A76AF800DC328E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		345EEDEE24A748EE001D419B /* Debug */ = {
@@ -772,6 +963,96 @@
 			};
 			name = Release;
 		};
+		3497313A24A76AF800DC328E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FormulaOneWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 75PKQ5LQ7V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FormulaOneWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serdarturan.FormulaOne.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		3497313B24A76AF800DC328E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FormulaOneWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 75PKQ5LQ7V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FormulaOneWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serdarturan.FormulaOne.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		3497313E24A76AF800DC328E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75PKQ5LQ7V;
+				IBSC_MODULE = FormulaOneWatch_Extension;
+				INFOPLIST_FILE = FormulaOneWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serdarturan.FormulaOne.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		3497313F24A76AF800DC328E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75PKQ5LQ7V;
+				IBSC_MODULE = FormulaOneWatch_Extension;
+				INFOPLIST_FILE = FormulaOneWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serdarturan.FormulaOne.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -798,6 +1079,24 @@
 			buildConfigurations = (
 				345EEDF424A748EE001D419B /* Debug */,
 				345EEDF524A748EE001D419B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3497313924A76AF800DC328E /* Build configuration list for PBXNativeTarget "FormulaOneWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3497313A24A76AF800DC328E /* Debug */,
+				3497313B24A76AF800DC328E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3497313D24A76AF800DC328E /* Build configuration list for PBXNativeTarget "FormulaOneWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3497313E24A76AF800DC328E /* Debug */,
+				3497313F24A76AF800DC328E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
