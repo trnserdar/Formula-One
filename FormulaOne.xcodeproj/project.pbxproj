@@ -55,6 +55,12 @@
 		345EEE4024A74E61001D419B /* FormulaOneClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE3E24A74E61001D419B /* FormulaOneClient.swift */; };
 		345EEE4224A74E69001D419B /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE4124A74E69001D419B /* NetworkConstants.swift */; };
 		345EEE4324A74E69001D419B /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE4124A74E69001D419B /* NetworkConstants.swift */; };
+		345EEE4924A74F26001D419B /* Formula1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345EEE4624A74F26001D419B /* Formula1-Bold.otf */; };
+		345EEE4A24A74F26001D419B /* Formula1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345EEE4624A74F26001D419B /* Formula1-Bold.otf */; };
+		345EEE4B24A74F26001D419B /* Formula1-Wide.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345EEE4724A74F26001D419B /* Formula1-Wide.otf */; };
+		345EEE4C24A74F26001D419B /* Formula1-Wide.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345EEE4724A74F26001D419B /* Formula1-Wide.otf */; };
+		345EEE4D24A74F26001D419B /* Formula1-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345EEE4824A74F26001D419B /* Formula1-Regular.otf */; };
+		345EEE4E24A74F26001D419B /* Formula1-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 345EEE4824A74F26001D419B /* Formula1-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +92,9 @@
 		345EEE3B24A74E57001D419B /* FormulaOneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneRouter.swift; sourceTree = "<group>"; };
 		345EEE3E24A74E61001D419B /* FormulaOneClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneClient.swift; sourceTree = "<group>"; };
 		345EEE4124A74E69001D419B /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		345EEE4624A74F26001D419B /* Formula1-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Bold.otf"; sourceTree = "<group>"; };
+		345EEE4724A74F26001D419B /* Formula1-Wide.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Wide.otf"; sourceTree = "<group>"; };
+		345EEE4824A74F26001D419B /* Formula1-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				345EEDD724A748ED001D419B /* Assets.xcassets */,
+				345EEE4524A74F03001D419B /* Extensions */,
+				345EEE4424A74EFC001D419B /* Fonts */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -268,6 +279,23 @@
 				345EEE0224A74AEE001D419B /* CircuitModel.swift */,
 			);
 			path = Circuit;
+			sourceTree = "<group>";
+		};
+		345EEE4424A74EFC001D419B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				345EEE4624A74F26001D419B /* Formula1-Bold.otf */,
+				345EEE4824A74F26001D419B /* Formula1-Regular.otf */,
+				345EEE4724A74F26001D419B /* Formula1-Wide.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		345EEE4524A74F03001D419B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +385,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				345EEDEC24A748EE001D419B /* Assets.xcassets in Resources */,
+				345EEE4D24A74F26001D419B /* Formula1-Regular.otf in Resources */,
+				345EEE4B24A74F26001D419B /* Formula1-Wide.otf in Resources */,
+				345EEE4924A74F26001D419B /* Formula1-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +396,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				345EEDED24A748EE001D419B /* Assets.xcassets in Resources */,
+				345EEE4E24A74F26001D419B /* Formula1-Regular.otf in Resources */,
+				345EEE4C24A74F26001D419B /* Formula1-Wide.otf in Resources */,
+				345EEE4A24A74F26001D419B /* Formula1-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
