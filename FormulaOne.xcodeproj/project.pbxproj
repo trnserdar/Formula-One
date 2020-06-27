@@ -13,6 +13,38 @@
 		345EEDEB24A748EE001D419B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEDD624A748ED001D419B /* ContentView.swift */; };
 		345EEDEC24A748EE001D419B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345EEDD724A748ED001D419B /* Assets.xcassets */; };
 		345EEDED24A748EE001D419B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345EEDD724A748ED001D419B /* Assets.xcassets */; };
+		345EEE0324A74AEE001D419B /* CircuitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE0224A74AEE001D419B /* CircuitModel.swift */; };
+		345EEE0424A74AEE001D419B /* CircuitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE0224A74AEE001D419B /* CircuitModel.swift */; };
+		345EEE0624A74B0C001D419B /* CircuitsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE0524A74B0C001D419B /* CircuitsResponseModel.swift */; };
+		345EEE0724A74B0C001D419B /* CircuitsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE0524A74B0C001D419B /* CircuitsResponseModel.swift */; };
+		345EEE0924A74B25001D419B /* CompetitionsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE0824A74B25001D419B /* CompetitionsResponseModel.swift */; };
+		345EEE0A24A74B25001D419B /* CompetitionsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE0824A74B25001D419B /* CompetitionsResponseModel.swift */; };
+		345EEE0C24A74B32001D419B /* CompetitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE0B24A74B32001D419B /* CompetitionModel.swift */; };
+		345EEE0D24A74B32001D419B /* CompetitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE0B24A74B32001D419B /* CompetitionModel.swift */; };
+		345EEE0F24A74B6E001D419B /* DriversResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE0E24A74B6E001D419B /* DriversResponseModel.swift */; };
+		345EEE1024A74B6E001D419B /* DriversResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE0E24A74B6E001D419B /* DriversResponseModel.swift */; };
+		345EEE1224A74B78001D419B /* DriverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE1124A74B78001D419B /* DriverModel.swift */; };
+		345EEE1324A74B78001D419B /* DriverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE1124A74B78001D419B /* DriverModel.swift */; };
+		345EEE1524A74B84001D419B /* DriverTeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE1424A74B84001D419B /* DriverTeamModel.swift */; };
+		345EEE1624A74B84001D419B /* DriverTeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE1424A74B84001D419B /* DriverTeamModel.swift */; };
+		345EEE1824A74B90001D419B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE1724A74B90001D419B /* LocationModel.swift */; };
+		345EEE1924A74B90001D419B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE1724A74B90001D419B /* LocationModel.swift */; };
+		345EEE1B24A74B9D001D419B /* SeasonsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE1A24A74B9D001D419B /* SeasonsResponseModel.swift */; };
+		345EEE1C24A74B9D001D419B /* SeasonsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE1A24A74B9D001D419B /* SeasonsResponseModel.swift */; };
+		345EEE1E24A74BAE001D419B /* RacesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE1D24A74BAE001D419B /* RacesResponseModel.swift */; };
+		345EEE1F24A74BAE001D419B /* RacesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE1D24A74BAE001D419B /* RacesResponseModel.swift */; };
+		345EEE2124A74BB5001D419B /* RaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE2024A74BB5001D419B /* RaceModel.swift */; };
+		345EEE2224A74BB5001D419B /* RaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE2024A74BB5001D419B /* RaceModel.swift */; };
+		345EEE2424A74BBC001D419B /* LapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE2324A74BBC001D419B /* LapModel.swift */; };
+		345EEE2524A74BBC001D419B /* LapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE2324A74BBC001D419B /* LapModel.swift */; };
+		345EEE2724A74BCA001D419B /* RankingsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE2624A74BCA001D419B /* RankingsResponseModel.swift */; };
+		345EEE2824A74BCA001D419B /* RankingsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE2624A74BCA001D419B /* RankingsResponseModel.swift */; };
+		345EEE2A24A74BD1001D419B /* RankingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE2924A74BD1001D419B /* RankingModel.swift */; };
+		345EEE2B24A74BD1001D419B /* RankingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE2924A74BD1001D419B /* RankingModel.swift */; };
+		345EEE2D24A74BED001D419B /* TeamsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE2C24A74BED001D419B /* TeamsResponseModel.swift */; };
+		345EEE2E24A74BED001D419B /* TeamsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE2C24A74BED001D419B /* TeamsResponseModel.swift */; };
+		345EEE3024A74BF5001D419B /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE2F24A74BF5001D419B /* TeamModel.swift */; };
+		345EEE3124A74BF5001D419B /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE2F24A74BF5001D419B /* TeamModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +56,22 @@
 		345EEDE424A748EE001D419B /* FormulaOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345EEDE624A748EE001D419B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		345EEDE724A748EE001D419B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		345EEE0224A74AEE001D419B /* CircuitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitModel.swift; sourceTree = "<group>"; };
+		345EEE0524A74B0C001D419B /* CircuitsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitsResponseModel.swift; sourceTree = "<group>"; };
+		345EEE0824A74B25001D419B /* CompetitionsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsResponseModel.swift; sourceTree = "<group>"; };
+		345EEE0B24A74B32001D419B /* CompetitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionModel.swift; sourceTree = "<group>"; };
+		345EEE0E24A74B6E001D419B /* DriversResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversResponseModel.swift; sourceTree = "<group>"; };
+		345EEE1124A74B78001D419B /* DriverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverModel.swift; sourceTree = "<group>"; };
+		345EEE1424A74B84001D419B /* DriverTeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTeamModel.swift; sourceTree = "<group>"; };
+		345EEE1724A74B90001D419B /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		345EEE1A24A74B9D001D419B /* SeasonsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsResponseModel.swift; sourceTree = "<group>"; };
+		345EEE1D24A74BAE001D419B /* RacesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesResponseModel.swift; sourceTree = "<group>"; };
+		345EEE2024A74BB5001D419B /* RaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceModel.swift; sourceTree = "<group>"; };
+		345EEE2324A74BBC001D419B /* LapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapModel.swift; sourceTree = "<group>"; };
+		345EEE2624A74BCA001D419B /* RankingsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingsResponseModel.swift; sourceTree = "<group>"; };
+		345EEE2924A74BD1001D419B /* RankingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingModel.swift; sourceTree = "<group>"; };
+		345EEE2C24A74BED001D419B /* TeamsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsResponseModel.swift; sourceTree = "<group>"; };
+		345EEE2F24A74BF5001D419B /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +188,8 @@
 		345EEDFB24A74A7C001D419B /* Team */ = {
 			isa = PBXGroup;
 			children = (
+				345EEE2C24A74BED001D419B /* TeamsResponseModel.swift */,
+				345EEE2F24A74BF5001D419B /* TeamModel.swift */,
 			);
 			path = Team;
 			sourceTree = "<group>";
@@ -147,6 +197,8 @@
 		345EEDFC24A74A81001D419B /* Ranking */ = {
 			isa = PBXGroup;
 			children = (
+				345EEE2624A74BCA001D419B /* RankingsResponseModel.swift */,
+				345EEE2924A74BD1001D419B /* RankingModel.swift */,
 			);
 			path = Ranking;
 			sourceTree = "<group>";
@@ -154,6 +206,9 @@
 		345EEDFD24A74A87001D419B /* Race */ = {
 			isa = PBXGroup;
 			children = (
+				345EEE1D24A74BAE001D419B /* RacesResponseModel.swift */,
+				345EEE2024A74BB5001D419B /* RaceModel.swift */,
+				345EEE2324A74BBC001D419B /* LapModel.swift */,
 			);
 			path = Race;
 			sourceTree = "<group>";
@@ -161,6 +216,8 @@
 		345EEDFE24A74A8C001D419B /* General */ = {
 			isa = PBXGroup;
 			children = (
+				345EEE1724A74B90001D419B /* LocationModel.swift */,
+				345EEE1A24A74B9D001D419B /* SeasonsResponseModel.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -168,6 +225,9 @@
 		345EEDFF24A74A91001D419B /* Driver */ = {
 			isa = PBXGroup;
 			children = (
+				345EEE0E24A74B6E001D419B /* DriversResponseModel.swift */,
+				345EEE1124A74B78001D419B /* DriverModel.swift */,
+				345EEE1424A74B84001D419B /* DriverTeamModel.swift */,
 			);
 			path = Driver;
 			sourceTree = "<group>";
@@ -175,6 +235,8 @@
 		345EEE0024A74A97001D419B /* Competitions */ = {
 			isa = PBXGroup;
 			children = (
+				345EEE0824A74B25001D419B /* CompetitionsResponseModel.swift */,
+				345EEE0B24A74B32001D419B /* CompetitionModel.swift */,
 			);
 			path = Competitions;
 			sourceTree = "<group>";
@@ -182,6 +244,8 @@
 		345EEE0124A74A9E001D419B /* Circuit */ = {
 			isa = PBXGroup;
 			children = (
+				345EEE0524A74B0C001D419B /* CircuitsResponseModel.swift */,
+				345EEE0224A74AEE001D419B /* CircuitModel.swift */,
 			);
 			path = Circuit;
 			sourceTree = "<group>";
@@ -283,8 +347,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345EEE1524A74B84001D419B /* DriverTeamModel.swift in Sources */,
+				345EEE0F24A74B6E001D419B /* DriversResponseModel.swift in Sources */,
+				345EEE3024A74BF5001D419B /* TeamModel.swift in Sources */,
+				345EEE1B24A74B9D001D419B /* SeasonsResponseModel.swift in Sources */,
+				345EEE2124A74BB5001D419B /* RaceModel.swift in Sources */,
+				345EEE1224A74B78001D419B /* DriverModel.swift in Sources */,
+				345EEE2D24A74BED001D419B /* TeamsResponseModel.swift in Sources */,
+				345EEE0624A74B0C001D419B /* CircuitsResponseModel.swift in Sources */,
 				345EEDEA24A748EE001D419B /* ContentView.swift in Sources */,
 				345EEDE824A748EE001D419B /* FormulaOneApp.swift in Sources */,
+				345EEE2A24A74BD1001D419B /* RankingModel.swift in Sources */,
+				345EEE0C24A74B32001D419B /* CompetitionModel.swift in Sources */,
+				345EEE0324A74AEE001D419B /* CircuitModel.swift in Sources */,
+				345EEE1E24A74BAE001D419B /* RacesResponseModel.swift in Sources */,
+				345EEE2724A74BCA001D419B /* RankingsResponseModel.swift in Sources */,
+				345EEE2424A74BBC001D419B /* LapModel.swift in Sources */,
+				345EEE1824A74B90001D419B /* LocationModel.swift in Sources */,
+				345EEE0924A74B25001D419B /* CompetitionsResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +372,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345EEE1624A74B84001D419B /* DriverTeamModel.swift in Sources */,
+				345EEE1024A74B6E001D419B /* DriversResponseModel.swift in Sources */,
+				345EEE3124A74BF5001D419B /* TeamModel.swift in Sources */,
+				345EEE1C24A74B9D001D419B /* SeasonsResponseModel.swift in Sources */,
+				345EEE2224A74BB5001D419B /* RaceModel.swift in Sources */,
+				345EEE1324A74B78001D419B /* DriverModel.swift in Sources */,
+				345EEE2E24A74BED001D419B /* TeamsResponseModel.swift in Sources */,
+				345EEE0724A74B0C001D419B /* CircuitsResponseModel.swift in Sources */,
 				345EEDEB24A748EE001D419B /* ContentView.swift in Sources */,
 				345EEDE924A748EE001D419B /* FormulaOneApp.swift in Sources */,
+				345EEE2B24A74BD1001D419B /* RankingModel.swift in Sources */,
+				345EEE0D24A74B32001D419B /* CompetitionModel.swift in Sources */,
+				345EEE0424A74AEE001D419B /* CircuitModel.swift in Sources */,
+				345EEE1F24A74BAE001D419B /* RacesResponseModel.swift in Sources */,
+				345EEE2824A74BCA001D419B /* RankingsResponseModel.swift in Sources */,
+				345EEE2524A74BBC001D419B /* LapModel.swift in Sources */,
+				345EEE1924A74B90001D419B /* LocationModel.swift in Sources */,
+				345EEE0A24A74B25001D419B /* CompetitionsResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
