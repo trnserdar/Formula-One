@@ -94,6 +94,12 @@
 		3497314324A76C6A00DC328E /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497314124A76C6A00DC328E /* RankingView.swift */; };
 		3497314A24A77B1700DC328E /* RaceRankingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497314924A77B1700DC328E /* RaceRankingsView.swift */; };
 		3497314B24A77B1700DC328E /* RaceRankingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497314924A77B1700DC328E /* RaceRankingsView.swift */; };
+		3497314D24A7A73800DC328E /* DriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497314C24A7A73800DC328E /* DriverView.swift */; };
+		3497314E24A7A73800DC328E /* DriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497314C24A7A73800DC328E /* DriverView.swift */; };
+		3497315124A7B06200DC328E /* DriverPersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497315024A7B06200DC328E /* DriverPersonalView.swift */; };
+		3497315224A7B06200DC328E /* DriverPersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497315024A7B06200DC328E /* DriverPersonalView.swift */; };
+		3497315424A7B14600DC328E /* DriverSeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497315324A7B14600DC328E /* DriverSeasonView.swift */; };
+		3497315524A7B14600DC328E /* DriverSeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497315324A7B14600DC328E /* DriverSeasonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,6 +199,9 @@
 		3497313524A76AF800DC328E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		3497314124A76C6A00DC328E /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
 		3497314924A77B1700DC328E /* RaceRankingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceRankingsView.swift; sourceTree = "<group>"; };
+		3497314C24A7A73800DC328E /* DriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverView.swift; sourceTree = "<group>"; };
+		3497315024A7B06200DC328E /* DriverPersonalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverPersonalView.swift; sourceTree = "<group>"; };
+		3497315324A7B14600DC328E /* DriverSeasonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverSeasonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +337,7 @@
 				345EEE5C24A75346001D419B /* Results */,
 				345EEE5D24A75351001D419B /* Search */,
 				345EEE5E24A7535E001D419B /* Circuits */,
+				3497314F24A7B04000DC328E /* Driver */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -490,6 +500,16 @@
 				3497313224A76AF800DC328E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3497314F24A7B04000DC328E /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				3497314C24A7A73800DC328E /* DriverView.swift */,
+				3497315024A7B06200DC328E /* DriverPersonalView.swift */,
+				3497315324A7B14600DC328E /* DriverSeasonView.swift */,
+			);
+			path = Driver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -671,6 +691,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3497314D24A7A73800DC328E /* DriverView.swift in Sources */,
 				345EEE5024A75062001D419B /* Color+Hex.swift in Sources */,
 				345EEE5924A75092001D419B /* UIApplication+EndEditing.swift in Sources */,
 				345EEE1524A74B84001D419B /* DriverTeamModel.swift in Sources */,
@@ -682,6 +703,7 @@
 				345EEE1B24A74B9D001D419B /* SeasonsResponseModel.swift in Sources */,
 				345EEE2124A74BB5001D419B /* RaceModel.swift in Sources */,
 				345EEE1224A74B78001D419B /* DriverModel.swift in Sources */,
+				3497315124A7B06200DC328E /* DriverPersonalView.swift in Sources */,
 				3497314A24A77B1700DC328E /* RaceRankingsView.swift in Sources */,
 				3497310424A7570000DC328E /* RankingsView.swift in Sources */,
 				3497310A24A7571600DC328E /* SearchView.swift in Sources */,
@@ -690,6 +712,7 @@
 				345EEE2D24A74BED001D419B /* TeamsResponseModel.swift in Sources */,
 				345EEE3F24A74E61001D419B /* FormulaOneClient.swift in Sources */,
 				3497314224A76C6A00DC328E /* RankingView.swift in Sources */,
+				3497315424A7B14600DC328E /* DriverSeasonView.swift in Sources */,
 				345EEE0624A74B0C001D419B /* CircuitsResponseModel.swift in Sources */,
 				345EEDE824A748EE001D419B /* FormulaOneApp.swift in Sources */,
 				345EEE2A24A74BD1001D419B /* RankingModel.swift in Sources */,
@@ -711,6 +734,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3497314E24A7A73800DC328E /* DriverView.swift in Sources */,
 				345EEE5124A75062001D419B /* Color+Hex.swift in Sources */,
 				345EEE5A24A75092001D419B /* UIApplication+EndEditing.swift in Sources */,
 				345EEE1624A74B84001D419B /* DriverTeamModel.swift in Sources */,
@@ -722,6 +746,7 @@
 				345EEE1C24A74B9D001D419B /* SeasonsResponseModel.swift in Sources */,
 				345EEE2224A74BB5001D419B /* RaceModel.swift in Sources */,
 				345EEE1324A74B78001D419B /* DriverModel.swift in Sources */,
+				3497315224A7B06200DC328E /* DriverPersonalView.swift in Sources */,
 				3497314B24A77B1700DC328E /* RaceRankingsView.swift in Sources */,
 				3497310524A7570000DC328E /* RankingsView.swift in Sources */,
 				3497310B24A7571600DC328E /* SearchView.swift in Sources */,
@@ -730,6 +755,7 @@
 				345EEE2E24A74BED001D419B /* TeamsResponseModel.swift in Sources */,
 				345EEE4024A74E61001D419B /* FormulaOneClient.swift in Sources */,
 				3497314324A76C6A00DC328E /* RankingView.swift in Sources */,
+				3497315524A7B14600DC328E /* DriverSeasonView.swift in Sources */,
 				345EEE0724A74B0C001D419B /* CircuitsResponseModel.swift in Sources */,
 				345EEDE924A748EE001D419B /* FormulaOneApp.swift in Sources */,
 				345EEE2B24A74BD1001D419B /* RankingModel.swift in Sources */,
