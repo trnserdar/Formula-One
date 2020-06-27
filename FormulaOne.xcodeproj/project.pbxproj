@@ -47,6 +47,14 @@
 		345EEE3124A74BF5001D419B /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE2F24A74BF5001D419B /* TeamModel.swift */; };
 		345EEE3424A74D69001D419B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 345EEE3324A74D69001D419B /* Alamofire */; };
 		345EEE3724A74DA9001D419B /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 345EEE3624A74DA9001D419B /* URLImage */; };
+		345EEE3924A74E47001D419B /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE3824A74E47001D419B /* ServiceClient.swift */; };
+		345EEE3A24A74E47001D419B /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE3824A74E47001D419B /* ServiceClient.swift */; };
+		345EEE3C24A74E57001D419B /* FormulaOneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE3B24A74E57001D419B /* FormulaOneRouter.swift */; };
+		345EEE3D24A74E57001D419B /* FormulaOneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE3B24A74E57001D419B /* FormulaOneRouter.swift */; };
+		345EEE3F24A74E61001D419B /* FormulaOneClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE3E24A74E61001D419B /* FormulaOneClient.swift */; };
+		345EEE4024A74E61001D419B /* FormulaOneClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE3E24A74E61001D419B /* FormulaOneClient.swift */; };
+		345EEE4224A74E69001D419B /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE4124A74E69001D419B /* NetworkConstants.swift */; };
+		345EEE4324A74E69001D419B /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EEE4124A74E69001D419B /* NetworkConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +82,10 @@
 		345EEE2924A74BD1001D419B /* RankingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingModel.swift; sourceTree = "<group>"; };
 		345EEE2C24A74BED001D419B /* TeamsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsResponseModel.swift; sourceTree = "<group>"; };
 		345EEE2F24A74BF5001D419B /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
+		345EEE3824A74E47001D419B /* ServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
+		345EEE3B24A74E57001D419B /* FormulaOneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneRouter.swift; sourceTree = "<group>"; };
+		345EEE3E24A74E61001D419B /* FormulaOneClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneClient.swift; sourceTree = "<group>"; };
+		345EEE4124A74E69001D419B /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +181,10 @@
 		345EEDF824A74A46001D419B /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				345EEE3824A74E47001D419B /* ServiceClient.swift */,
+				345EEE3B24A74E57001D419B /* FormulaOneRouter.swift */,
+				345EEE3E24A74E61001D419B /* FormulaOneClient.swift */,
+				345EEE4124A74E69001D419B /* NetworkConstants.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -361,11 +377,14 @@
 			files = (
 				345EEE1524A74B84001D419B /* DriverTeamModel.swift in Sources */,
 				345EEE0F24A74B6E001D419B /* DriversResponseModel.swift in Sources */,
+				345EEE4224A74E69001D419B /* NetworkConstants.swift in Sources */,
 				345EEE3024A74BF5001D419B /* TeamModel.swift in Sources */,
 				345EEE1B24A74B9D001D419B /* SeasonsResponseModel.swift in Sources */,
 				345EEE2124A74BB5001D419B /* RaceModel.swift in Sources */,
 				345EEE1224A74B78001D419B /* DriverModel.swift in Sources */,
+				345EEE3C24A74E57001D419B /* FormulaOneRouter.swift in Sources */,
 				345EEE2D24A74BED001D419B /* TeamsResponseModel.swift in Sources */,
+				345EEE3F24A74E61001D419B /* FormulaOneClient.swift in Sources */,
 				345EEE0624A74B0C001D419B /* CircuitsResponseModel.swift in Sources */,
 				345EEDEA24A748EE001D419B /* ContentView.swift in Sources */,
 				345EEDE824A748EE001D419B /* FormulaOneApp.swift in Sources */,
@@ -376,6 +395,7 @@
 				345EEE2724A74BCA001D419B /* RankingsResponseModel.swift in Sources */,
 				345EEE2424A74BBC001D419B /* LapModel.swift in Sources */,
 				345EEE1824A74B90001D419B /* LocationModel.swift in Sources */,
+				345EEE3924A74E47001D419B /* ServiceClient.swift in Sources */,
 				345EEE0924A74B25001D419B /* CompetitionsResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,11 +406,14 @@
 			files = (
 				345EEE1624A74B84001D419B /* DriverTeamModel.swift in Sources */,
 				345EEE1024A74B6E001D419B /* DriversResponseModel.swift in Sources */,
+				345EEE4324A74E69001D419B /* NetworkConstants.swift in Sources */,
 				345EEE3124A74BF5001D419B /* TeamModel.swift in Sources */,
 				345EEE1C24A74B9D001D419B /* SeasonsResponseModel.swift in Sources */,
 				345EEE2224A74BB5001D419B /* RaceModel.swift in Sources */,
 				345EEE1324A74B78001D419B /* DriverModel.swift in Sources */,
+				345EEE3D24A74E57001D419B /* FormulaOneRouter.swift in Sources */,
 				345EEE2E24A74BED001D419B /* TeamsResponseModel.swift in Sources */,
+				345EEE4024A74E61001D419B /* FormulaOneClient.swift in Sources */,
 				345EEE0724A74B0C001D419B /* CircuitsResponseModel.swift in Sources */,
 				345EEDEB24A748EE001D419B /* ContentView.swift in Sources */,
 				345EEDE924A748EE001D419B /* FormulaOneApp.swift in Sources */,
@@ -401,6 +424,7 @@
 				345EEE2824A74BCA001D419B /* RankingsResponseModel.swift in Sources */,
 				345EEE2524A74BBC001D419B /* LapModel.swift in Sources */,
 				345EEE1924A74B90001D419B /* LocationModel.swift in Sources */,
+				345EEE3A24A74E47001D419B /* ServiceClient.swift in Sources */,
 				345EEE0A24A74B25001D419B /* CompetitionsResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
