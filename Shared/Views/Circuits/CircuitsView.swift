@@ -7,38 +7,9 @@
 
 import SwiftUI
 
-struct CircuitsView: View {
+class CircuitStore: ObservableObject {
     
-    @State private var circuits: [CircuitModel] = [CircuitModel(id: 1, name: "Albert Park", image: "https://media.api-sports.io/formula-1/circuits/1.png", competition: CompetitionModel(id: 1, name: "Australia Grand Prix", location: LocationModel(country: "Australia", city: "Melbourne")), length: "5.303 Kms", capacity: 80000, opened: 1953, owner: nil), CircuitModel(id: 1, name: "Albert Park", image: "https://media.api-sports.io/formula-1/circuits/1.png", competition: CompetitionModel(id: 1, name: "Australia Grand Prix", location: LocationModel(country: "Australia", city: "Melbourne")), length: "5.303 Kms", capacity: 80000, opened: 1953, owner: nil), CircuitModel(id: 1, name: "Albert Park", image: "https://media.api-sports.io/formula-1/circuits/1.png", competition: CompetitionModel(id: 1, name: "Australia Grand Prix", location: LocationModel(country: "Australia", city: "Melbourne")), length: "5.303 Kms", capacity: 80000, opened: 1953, owner: nil)]
-    
-    
-    var body: some View {
-        
-        GeometryReader { geo in
-            
-            NavigationView {
-                
-                ScrollView {
-                    
-                    LazyVStack {
-                        
-                        ForEach((0..<self.circuits.count), id: \.self) { index in
-                        
-                            NavigationLink(destination: CircuitView(circuit: self.circuits[index])) {
-                                CircuitView(circuit: self.circuits[index])
-                            }
-                            .listRowInsets(EdgeInsets())
-                            .frame(maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
-                            .background(Color.white)
-                        }
-                    }
-                }
-                .accentColor(.black)
-                .onAppear(perform: self.getCircuits)
-                .navigationBarTitle(Text("Circuits"), displayMode: .large)
-            }
-        }
-    }
+    @Published var circuits: [CircuitModel] = []
     
     func getCircuits() {
         
@@ -60,6 +31,39 @@ struct CircuitsView: View {
             }
         }
         
+    }
+}
+
+struct CircuitsView: View {
+    
+    @StateObject private var store = CircuitStore()
+    
+    var body: some View {
+        
+        GeometryReader { geo in
+            
+            NavigationView {
+                
+                ScrollView {
+                    
+                    LazyVStack {
+                        
+                        ForEach((0..<self.store.circuits.count), id: \.self) { index in
+                        
+                            NavigationLink(destination: CircuitView(circuit: self.store.circuits[index])) {
+                                CircuitView(circuit: self.store.circuits[index])
+                            }
+                            .listRowInsets(EdgeInsets())
+                            .frame(maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
+                            .background(Color.white)
+                        }
+                    }
+                }
+                .accentColor(.black)
+                .onAppear(perform: self.store.getCircuits)
+                .navigationBarTitle(Text("Circuits"), displayMode: .large)
+            }
+        }
     }
 }
 
