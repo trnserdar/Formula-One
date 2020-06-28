@@ -7,38 +7,42 @@
 
 import SwiftUI
 
-struct RankingsView: View {
+class RankingConfig: ObservableObject {
     
-    @State var seasons: [Int] = []
-    @State private var selectedSeason = 2019
+    @Published var seasons: [Int] = []
+    @Published var selectedSeason = 2019
     
     var types: [String] = ["Drivers", "Teams"]
-    @State private var selectedType = "Drivers"
+    @Published var selectedType = "Drivers"
     
-//    [RankingModel(position: 1, team: TeamModel(id: 5, name: "Mercedes-AMG Petronas", logo: "https://media.api-sports.io/formula-1/teams/5.png", president: nil, director: nil, technical_manager: nil, engine: nil, tyres: nil), points: 413, season: 2019, driver: DriverModel(id: 20, name: "Lewis Hamilton", image: "https://media.api-sports.io/formula-1/drivers/20.png", nationality: nil, birthdate: nil, teams: nil), wins: 11, behind: 0, race: nil, time: nil, laps: nil, grid: nil, pits: nil, gap: nil), RankingModel(position: 1, team: TeamModel(id: 5, name: "Mercedes-AMG Petronas", logo: "https://media.api-sports.io/formula-1/teams/5.png", president: nil, director: nil, technical_manager: nil, engine: nil, tyres: nil), points: 413, season: 2019, driver: DriverModel(id: 20, name: "Lewis Hamilton", image: "https://media.api-sports.io/formula-1/drivers/20.png", nationality: nil, birthdate: nil, teams: nil), wins: 11, behind: 0, race: nil, time: nil, laps: nil, grid: nil, pits: nil, gap: nil)]
-    @State private var rankings: [RankingModel] = []
+    @Published var rankings: [RankingModel] = []
+}
+
+struct RankingsView: View {
+    
+    @ObservedObject private var config = RankingConfig()
     
     var body: some View {
         
         let selectedSeasonBinding = Binding<Int>(
             get: {
-                self.selectedSeason
+                self.config.selectedSeason
             },
             set: {
-                self.selectedSeason = $0
+                self.config.selectedSeason = $0
                 self.getRankings()
-                print("set selected season: \(self.selectedSeason)")
+                print("set selected season: \(self.config.selectedSeason)")
             }
         )
         
         let selectedTypeBinding = Binding<String>(
             get: {
-                self.selectedType
+                self.config.selectedType
             },
             set: {
-                self.selectedType = $0
+                self.config.selectedType = $0
                 self.getRankings()
-                print("set selected type: \(self.selectedType)")
+                print("set selected type: \(self.config.selectedType)")
             }
         )
        
@@ -49,7 +53,7 @@ struct RankingsView: View {
                 Form {
                     Section {
                         Picker("Selected Season", selection: selectedSeasonBinding) {
-                            ForEach(self.seasons, id: \.self) { season in
+                            ForEach(self.config.seasons, id: \.self) { season in
                                 Text("\(String(format: "%2d", season))")
                                 .font(.customSubheadline)
                             }
@@ -60,7 +64,7 @@ struct RankingsView: View {
                     Section {
                         
                         Picker("Ranking Type:", selection: selectedTypeBinding) {
-                            ForEach(self.types, id: \.self) { type in
+                            ForEach(self.config.types, id: \.self) { type in
                                 Text("\(type)")
                                 .font(.customSubheadline)
                             }
@@ -71,8 +75,8 @@ struct RankingsView: View {
                     
                     Section {
                         List {
-                            ForEach(self.rankings) { ranking in
-                                RankingView(ranking: ranking, rankingType: self.selectedType.lowercased())
+                            ForEach(self.config.rankings) { ranking in
+                                RankingView(ranking: ranking, rankingType: self.config.selectedType.lowercased())
                                     .listRowInsets(EdgeInsets())
                                     .frame(maxWidth: .infinity, minHeight: 120, maxHeight: .infinity)
                                     .background(Color.white)
@@ -92,7 +96,7 @@ struct RankingsView: View {
     
     func getSeasons() {
         
-        guard seasons.count == 0 else {
+        guard config.seasons.count == 0 else {
             return
         }
         
@@ -110,7 +114,7 @@ struct RankingsView: View {
             }
             
             DispatchQueue.main.async {
-                self.seasons = list
+                self.config.seasons = list
             }
             
             print("Seasons Count: \(list.count)")
@@ -120,7 +124,7 @@ struct RankingsView: View {
     
     func getRankings() {
         
-        FormulaOneClient.getRankings(type: selectedType.lowercased(), season: selectedSeason) { (response, error) in
+        FormulaOneClient.getRankings(type: config.selectedType.lowercased(), season: config.selectedSeason) { (response, error) in
         
              guard error == nil else {
                 print("get rankings error: \(error!)")
@@ -134,7 +138,7 @@ struct RankingsView: View {
             }
             
             DispatchQueue.main.async {
-                self.rankings = list
+                self.config.rankings = list
             }
         }
     }
