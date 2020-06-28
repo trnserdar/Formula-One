@@ -7,51 +7,56 @@
 
 import SwiftUI
 
+struct ResultConfig {
+    
+    var seasons: [Int] = []
+    var selectedSeason: Int = 2019
+    
+    var competitions: [CompetitionModel] = []
+    var selectedCompetitionIndex: Int = 0
+    
+    var races: [RaceModel] = []
+    var selectedRaceIndex: Int = 0
+    
+    var rankings: [RankingModel] = []
+    var isShowRankDetail = false
+}
+
 struct ResultsView: View {
     
-    @State var seasons: [Int] = []
-    @State private var selectedSeason: Int = 2019
-    
-    @State private var competitions: [CompetitionModel] = []
-    @State private var selectedCompetitionIndex: Int = 0
-    
-    @State private var races: [RaceModel] = []
-    @State private var selectedRaceIndex: Int = 0
-    
-    @State private var rankings: [RankingModel] = []
-    @State private var isShowRankDetail = false
+    @State private var resultConfig = ResultConfig()
     
     var body: some View {
         
         let selectedSeasonBinding = Binding<Int>(
             get: {
-                self.selectedSeason
+                self.resultConfig.selectedSeason
             },
             set: {
-                self.selectedSeason = $0
+                self.resultConfig.selectedSeason = $0
                 self.getRaces()
-                print("Selected Competition: \(self.competitions[self.selectedCompetitionIndex].name), \(self.selectedSeason)")
+                print("Selected Competition: \(self.resultConfig.competitions[self.resultConfig.selectedCompetitionIndex].name), \(self.resultConfig.selectedSeason)")
             }
         )
         
         let selectedCompetitionBinding = Binding<Int>(
             get: {
-                self.selectedCompetitionIndex
+                self.resultConfig.selectedCompetitionIndex
             },
             set: {
-                self.selectedCompetitionIndex = $0
+                self.resultConfig.selectedCompetitionIndex = $0
                 self.getRaces()
-                print("Selected Competition: \(self.competitions[self.selectedCompetitionIndex].name), \(self.selectedSeason)")
+                print("Selected Competition: \(self.resultConfig.competitions[self.resultConfig.selectedCompetitionIndex].name), \(self.resultConfig.selectedSeason)")
             }
         )
         
         let selectedRaceBinding = Binding<Int>(
             get: {
-                self.selectedRaceIndex
+                self.resultConfig.selectedRaceIndex
             },
             set: {
-                self.selectedRaceIndex = $0
-                print("Selected Race: \(self.selectedRaceIndex)")
+                self.resultConfig.selectedRaceIndex = $0
+                print("Selected Race: \(self.resultConfig.selectedRaceIndex)")
             }
         )
         
@@ -61,9 +66,9 @@ struct ResultsView: View {
                 
                 ZStack {
                     
-                    if self.races.count > self.selectedRaceIndex &&
-                        self.rankings.count > 0 {
-                        NavigationLink(destination: RaceRankingsView(selectedRace: self.races[self.selectedRaceIndex], rankings: self.rankings), isActive: self.$isShowRankDetail) { EmptyView().hidden().opacity(0.0) }
+                    if self.resultConfig.races.count > self.resultConfig.selectedRaceIndex &&
+                        self.resultConfig.rankings.count > 0 {
+                        NavigationLink(destination: RaceRankingsView(selectedRace: self.resultConfig.races[self.resultConfig.selectedRaceIndex], rankings: self.resultConfig.rankings), isActive: self.$resultConfig.isShowRankDetail) { EmptyView().hidden().opacity(0.0) }
                     }
                     
                     Form {
@@ -71,7 +76,7 @@ struct ResultsView: View {
                         Section {
                             
                             Picker("Season", selection: selectedSeasonBinding) {
-                                ForEach(self.seasons, id: \.self) { season in
+                                ForEach(self.resultConfig.seasons, id: \.self) { season in
                                     Text("\(String(format: "%2d", season))")
                                     .font(.customSubheadline)
                                 }
@@ -82,21 +87,21 @@ struct ResultsView: View {
                         Section {
                             
                             Picker("Competitions", selection: selectedCompetitionBinding) {
-                                ForEach((0..<self.competitions.count), id: \.self) { index in
-                                    Text("\(self.competitions[index].name)")
+                                ForEach((0..<self.resultConfig.competitions.count), id: \.self) { index in
+                                    Text("\(self.resultConfig.competitions[index].name)")
                                     .font(.customSubheadline)
                                 }
                                 
                             }.font(.customSubheadline)
                         }
                         
-                        if self.races.count > 0 {
+                        if self.resultConfig.races.count > 0 {
                             
                             Section {
                                 
                                 Picker("Races", selection: selectedRaceBinding) {
-                                    ForEach((0..<self.races.count), id: \.self) { index in
-                                        Text("\(self.races[index].type ?? "Unknown")")
+                                    ForEach((0..<self.resultConfig.races.count), id: \.self) { index in
+                                        Text("\(self.resultConfig.races[index].type ?? "Unknown")")
                                         .font(.customSubheadline)
                                     }
                                     
@@ -108,7 +113,7 @@ struct ResultsView: View {
                             
                             Button(action: {
                                 
-                                if self.races.count > 0 {
+                                if self.resultConfig.races.count > 0 {
                                     self.getRaceRankings()
                                 } else {
                                     self.getRaces()
@@ -137,7 +142,7 @@ struct ResultsView: View {
     
     func getSeasons() {
         
-        guard seasons.count == 0 else {
+        guard resultConfig.seasons.count == 0 else {
             return
         }
         
@@ -155,7 +160,7 @@ struct ResultsView: View {
             }
             
             DispatchQueue.main.async {
-                self.seasons = list
+                self.resultConfig.seasons = list
             }
             
             print("Seasons Count: \(list.count)")
@@ -164,7 +169,7 @@ struct ResultsView: View {
     
     func getCompetitions() {
         
-        guard competitions.count == 0 else {
+        guard resultConfig.competitions.count == 0 else {
             return
         }
         
@@ -183,20 +188,20 @@ struct ResultsView: View {
             
             print("Competitions Count: \(list.count)")
             DispatchQueue.main.async {
-                self.competitions = list
+                self.resultConfig.competitions = list
             }
         }
     }
     
     func getRaces() {
         
-        guard competitions.count > selectedCompetitionIndex else {
+        guard resultConfig.competitions.count > resultConfig.selectedCompetitionIndex else {
             return
         }
         
-        self.races.removeAll()
+        self.resultConfig.races.removeAll()
                 
-        FormulaOneClient.getRaces(competition: competitions[selectedCompetitionIndex].id, season: selectedSeason) { (response, error) in
+        FormulaOneClient.getRaces(competition: resultConfig.competitions[resultConfig.selectedCompetitionIndex].id, season: resultConfig.selectedSeason) { (response, error) in
             
             guard error == nil else {
                 print("getRaces error: \(error!)")
@@ -211,18 +216,18 @@ struct ResultsView: View {
             
             print("Races Count: \(list.count)")
             DispatchQueue.main.async {
-                self.races = list
+                self.resultConfig.races = list
             }
         }
     }
     
     func getRaceRankings() {
         
-        guard races.count > selectedRaceIndex else {
+        guard resultConfig.races.count > resultConfig.selectedRaceIndex else {
             return
         }
         
-        FormulaOneClient.getRaceRankings(race: races[selectedRaceIndex].id) { (response, error) in
+        FormulaOneClient.getRaceRankings(race: resultConfig.races[resultConfig.selectedRaceIndex].id) { (response, error) in
             
             guard error == nil else {
                 print("getRaceRankings: error \(error!.localizedDescription)")
@@ -236,8 +241,8 @@ struct ResultsView: View {
             }
             
             DispatchQueue.main.async {
-                self.rankings = list
-                self.isShowRankDetail = true
+                self.resultConfig.rankings = list
+                self.resultConfig.isShowRankDetail = true
             }
         }
     }
