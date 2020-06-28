@@ -32,7 +32,7 @@ struct DriverView: View {
                     DriverSeasonView(team: self.teams[index])
                 }
             }
-            .navigationBarTitle(self.driver.name)
+            .navigationTitle(self.driver.name)
         }
     }
 }

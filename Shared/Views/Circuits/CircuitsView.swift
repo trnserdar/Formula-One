@@ -61,7 +61,7 @@ struct CircuitsView: View {
                 }
                 .accentColor(.black)
                 .onAppear(perform: self.store.getCircuits)
-                .navigationBarTitle(Text("Circuits"), displayMode: .large)
+                .navigationTitle(Text("Circuits"))
             }
         }
     }

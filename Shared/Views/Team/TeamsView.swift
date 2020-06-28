@@ -60,7 +60,7 @@ struct TeamsView: View {
                     }
                     .accentColor(.black)
                     .onAppear(perform: store.getTeams)
-                    .navigationBarTitle(Text("Teams"), displayMode: .large)
+                    .navigationTitle(Text("Teams"))
                 }
             }
         }

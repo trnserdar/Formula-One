@@ -25,7 +25,7 @@ struct RaceRankingsView: View {
                 }
             }
             .background(Color.clear)
-            .navigationBarTitle(Text("\(self.selectedRace.competition?.name ?? "")"))
+            .navigationTitle(Text("\(self.selectedRace.competition?.name ?? "")"))
         }
 
     }

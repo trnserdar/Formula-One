@@ -47,7 +47,9 @@ struct SearchView: View {
                     
                     Section {
                         TextField("Search", text: searchKeyBinding) {
+                            #if !os(macOS)
                             UIApplication.shared.endEditing()
+                            #endif
                         }
                     }
                     
@@ -103,7 +105,7 @@ struct SearchView: View {
                         
                     }
                 }
-                .navigationBarTitle(Text("Search"), displayMode: .large)
+                .navigationTitle(Text("Search"))
             }
         }
         

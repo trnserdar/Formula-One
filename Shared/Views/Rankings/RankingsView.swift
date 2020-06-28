@@ -89,7 +89,7 @@ struct RankingsView: View {
                 }
                 .onAppear(perform: self.getSeasons)
                 .onAppear(perform: self.getRankings)
-                .navigationBarTitle(Text("Rankings"), displayMode: .large)
+                .navigationTitle(Text("Rankings"))
             }
         }
     }

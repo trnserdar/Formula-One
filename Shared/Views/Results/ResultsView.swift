@@ -135,7 +135,7 @@ struct ResultsView: View {
                 }
                 .onAppear(perform: self.getSeasons)
                 .onAppear(perform: self.getCompetitions)
-                .navigationBarTitle(Text("Results"), displayMode: .large)
+                .navigationTitle(Text("Results"))
             }
         }
     }
