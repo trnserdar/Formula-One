@@ -35,3 +35,6 @@ A prototype app about Formula One using latest SwiftUI.
 
 # Contacts
 * email: trnserdar@gmail.com
+
+# License
+Formula One is available under the MIT license. See the LICENSE file for more info.
