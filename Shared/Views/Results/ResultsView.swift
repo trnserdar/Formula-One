@@ -10,7 +10,7 @@ import SwiftUI
 struct ResultConfig {
     
     var seasons: [Int] = []
-    var selectedSeason: Int = 2019
+    var selectedSeason: Int = 2020
     
     var competitions: [CompetitionModel] = []
     var selectedCompetitionIndex: Int = 0
@@ -137,6 +137,7 @@ struct ResultsView: View {
                 .onAppear(perform: self.getCompetitions)
                 .navigationTitle(Text("Results"))
             }
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
     

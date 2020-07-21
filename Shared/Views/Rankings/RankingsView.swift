@@ -10,7 +10,7 @@ import SwiftUI
 class RankingConfig: ObservableObject {
     
     @Published var seasons: [Int] = []
-    @Published var selectedSeason = 2019
+    @Published var selectedSeason = 2020
     
     var types: [String] = ["Drivers", "Teams"]
     @Published var selectedType = "Drivers"
@@ -91,6 +91,7 @@ struct RankingsView: View {
                 .onAppear(perform: self.getRankings)
                 .navigationTitle(Text("Rankings"))
             }
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
     

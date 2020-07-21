@@ -63,6 +63,7 @@ struct CircuitsView: View {
                 .onAppear(perform: self.store.getCircuits)
                 .navigationTitle(Text("Circuits"))
             }
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }

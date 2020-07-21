@@ -63,6 +63,7 @@ struct TeamsView: View {
                     .navigationTitle(Text("Teams"))
                 }
             }
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }
